@@ -9,7 +9,7 @@ echo ============================================================
 echo.
 
 echo [*] Installing/verifying Python dependencies...
-pip install -r requirements.txt --quiet
+call pip install -r requirements.txt --quiet
 if errorlevel 1 (
     echo [ERROR] pip install failed. Make sure Python is installed and in your PATH.
     pause
