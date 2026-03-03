@@ -11,7 +11,7 @@ echo.
 :: Install node_modules if missing
 if not exist "node_modules" (
     echo [!] node_modules not found. Running npm install...
-    npm install
+    npm install --no-audit --no-fund
     if errorlevel 1 (
         echo [ERROR] npm install failed. Make sure Node.js is in your PATH.
         pause
